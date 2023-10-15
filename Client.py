@@ -15,7 +15,7 @@ while True:
     received_message = client_socket.recv(1024)  
     received_messaged = received_message.decode('utf-8')
     print(received_messaged)
-    if received_message == 'CLOSE SOCKET': 
+    if received_messaged == 'CLOSE SOCKET': 
         client_socket.close()
         break
     
