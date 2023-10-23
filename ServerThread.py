@@ -12,6 +12,7 @@ def threaded(conn, addr):
      conn.send(bytes(message_capitalized, 'utf-8'))
      if message_capitalized == 'CLOSE SOCKET':
          conn.close()
+         print(F"[ACTIVE CONNECTIONS] {threading.active_count() - 1-6-1}") 
          break
      
 def main():
